@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>订购机票</title>
+    <link rel="stylesheet" href="css/css2.css" />
+    <link rel="Shortcut Icon" href="img/tubiao.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>欢迎使用订票系统</h1>
+    </header>
+    <main>
+      <form>
+        <label>出发机场:</label>
+        <input type="text" name="from" required />
+
+        <label>到达机场:</label>
+        <input type="text" name="to" required />
+
+        <label>出发日期:</label>
+        <input type="date" name="depart-date" required />
+
+        <label>乘客人数:</label>
+        <input type="number" name="passenger-num" min="1" max="10" required />
+
+        <button type="submit"><a href="dinggou2.html">搜索航班</a></button>
+      </form>
+
+      <section id="flight-list">
+        <h2>航班列表</h2>
+        <hr />
+        <ul>
+          <li>
+            <div>
+              <h3>航班1</h3>
+              <p>出发机场：华北御龙国际机场</p>
+              <p>到达机场：南部奉华机场</p>
+              <p>飞机舱位：经济舱</p>
+              <p>登 机 口：F18</p>
+              <p>出发时间：2024-04-01 12:00 AM</p>
+              <p>到达时间：2024-04-01 16:00 AM</p>
+              <p>票价：320元</p>
+            </div>
+            <button><a href="zhifu.html">立即预订</a></button>
+          </li>
+          <li>
+            <div>
+              <h3>航班2</h3>
+              <p>出发机场：华北御龙国际机场</p>
+              <p>到达机场：南部奉华机场</p>
+              <p>飞机舱位：商务舱</p>
+              <p>登 机 口：F18</p>
+              <p>出发时间：2024-04-01 12:00 AM</p>
+              <p>到达时间：2024-04-01 16:00 AM</p>
+              <p>票价：550元</p>
+            </div>
+            <button><a href="zhifu.html">立即预订</a></button>
+          </li>
+          <li>
+            <div>
+              <h3>航班3</h3>
+              <p>出发机场：华北御龙国际机场</p>
+              <p>到达机场：南部奉华机场</p>
+              <p>飞机舱位：头等舱</p>
+              <p>登 机 口：F18</p>
+              <p>出发时间：2024-04-01 12:00 AM</p>
+              <p>到达时间：2024-04-01 16:00 AM</p>
+              <p>票价：700元</p>
+            </div>
+            <button><a href="zhifu.html">立即预订</a></button>
+          </li>
+        </ul>
+      </section>
+
+    <footer>
+      <p>版权所有 © 2024 御龙航空订票系统</p>
+    </footer>
+  </body>
+</html>

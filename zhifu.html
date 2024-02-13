@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>订单支付</title>
+    <link rel="Shortcut Icon" href="img/tubiao.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/zhifu.css" />
+  </head>
+  <body>
+    <header>
+      <h1>订单支付</h1>
+    </header>
+    <main>
+      <section>
+        <h2>订单简略详情</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>订单信息</th>
+              <th>价格</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>出发机场</td>
+              <td>华北御龙国际机场</td>
+            </tr>
+            <tr>
+              <td>到达机场</td>
+              <td>南部奉华机场</td>
+            </tr>
+            <tr>
+              <td>机票订单</td>
+              <td>500元</td>
+            </tr>
+            <tr>
+              <td>行李服务费</td>
+              <td>50元</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>总计</td>
+              <td>550元</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <section>
+        <h2>请选择支付方式</h2>
+        <form>
+          <div>
+            <label class="radio-container"
+              >微信支付
+              <input
+                type="radio"
+                class="payment-method"
+                name="payment-method"
+                value="credit-card"
+                checked
+              />
+              <span class="checkmark"></span>
+            </label>
+            <label class="radio-container"
+              >支付宝支付
+              <input
+                type="radio"
+                class="payment-method"
+                name="payment-method"
+                value="alipay"
+              />
+              <span class="checkmark"></span>
+            </label>
+            <label class="radio-container"
+              >信用卡支付
+              <input
+                type="radio"
+                class="payment-method"
+                name="payment-method"
+                value="wechat-pay"
+              />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div>
+            <label for="card-holder-name">持卡人姓名</label>
+            <input type="text" id="card-holder-name" required />
+          </div>
+          <button type="submit" id="submit-button">
+            <a href="chenggong.html">快速支付</a>
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
