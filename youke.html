@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>用户界面</title>
+    <link rel="stylesheet" href="css/youke.css" />
+    <link rel="Shortcut Icon" href="img/tubiao.png" type="image/x-icon" />
+    <style>
+     body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f1f1f1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        margin: 100%;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .avatar {
+        text-align: center;
+        margin-right: 20px;
+      }
+      .avatar img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin-bottom: 20px;
+      }
+      .info, .interests, .social {
+        flex: 1 1 30%;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+      h2 {
+        margin-top: 30px;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      a {
+        color: #333;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="avatar">
+        <img src="img/yonghu.png" alt="User Avatar" />
+      </div>
+      <div class="info">
+        <h2>个人信息</h2>
+        <p><strong>名字:</strong> 西瓜皮</p>
+        <p><strong>电话:</strong> 133******93</p>
+        <p><strong>位置:</strong> 中国中区</p>
+        <p><strong>绑定:</strong> [微信已绑定]</p>
+        <p><strong>快速支付:</strong> [已开启]</p>
+      </div>
+  </body>
+</html>
